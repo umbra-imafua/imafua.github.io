@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="shortcut icon" href="media/image/favicon.ico">
+    <link rel="icon" type="image/gif" href="media/image/animated_favicon.gif">    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/scss/style.css">
+
+    
+</head>
+
+<body>
+    <script type="module" src="js/script.js"></script>
+
+    <section class="banner-wrapper">
+        <div class="banner-video">
+            <video autoplay="autoplay" id="bgvid" muted="muted" fallback_image="media/video/landing_fallback.png  " title="Title">
+                <source src="media/video/landing0000-0060.webm" type="video/webm" ></source>
+                <!--<source src="video_path.mp4" type="video/mp4" ></source>
+                <source src="video_path.ogg" type="video/ogg" ></source>-->
+            </video>
+
+            <script> 
+                document.getElementById('bgvid').play();  
+
+                window.onscroll = function () { if(!document.getElementById('bgvid').ended && !document.getElementById('bgvid').error){ window.scrollTo(0, 0); } };
+
+                window.onbeforeunload = function () {
+                    window.location.replace("#bgvid");
+                    document.getElementById('return-to-top').click();
+                    window.scrollTo(0, 0);
+                    window.scrollY(0);
+                };
+
+            </script>
+        </div>
+        <div class="banner-objects">
+            <div class="description-box">
+                <h3>Hey there! I make <a href="#animated">Animated</a> <a href="#audio">Audio</a> <a href="#visual">Visual</a> <a href="#systems">Systems</a> </h3>
+                <h3>Please send any enquiries or nudes to:</h3>
+                <h3>umbra.imafua@gmail.com</h3>
+                <hr></hr>
+                <hr></hr>
+                <hr></hr>
+            </div>
+        </div>
+    </section>
+
+    <div class="content-wrapper">
+
+        <h1>⚧❤☉♡♪⚛☮✎✘✹☯♾⚙✂⚠⚖♙☀⅋</h1>
+
+        <div class="content" id="animated">
+
+            <h3>Animated</h3>
+            Woooo look at this content
+        </div>
+
+        <div class="content" id="audio">
+            <div class="music-player">
+                <h3>Audio</h3>
+                <h4>DJ</h4>
+                I dj tr 
+                
+
+                <div class="music-text">
+                    <h4 class='music-title'>Music</h4>
+                    <div class='music-desc'>This collection of music streches from 2016 all the way up to the present day, most tracks are nothing more than short experiments. They are all royalty free to use comercially, You can download any track by right clicking it and selecting 'save link as...' </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="content" id="visual">
+            <h3>Visual</h3>
+
+            lorem ipsum dipsum lorem ipsum dipsum lorem ipsum dipsum lorem ipsum dipsum lorem ipsum dipsum lorem ipsum dipsum lorem ipsum dipsum lorem ipsum dipsum lorem ipsum dipsum lorem ipsum dipsum lorem ipsum dipsum lorem ipsum dipsum lorem ipsum dipsum lorem ipsum dipsum lorem ipsum dipsum lorem ipsum dipsum
+            
+
+
+            <div class="art-slideshow">
+                <div class="art-text">
+                    <h4 class='art-title'>Art</h4>
+                    <div class='art-desc'>Here are my pictures.</div>
+                    <img class='art-pic' src="media\image\art-slides\monenoke.png" style="width:100%">
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="content" id="systems">
+            <h3>Systems</h3>
+        
+            lorem ipsum dipsum lorem ipsum dipsum lorem ipsum dipsum lorem ipsum dipsum lorem ipsum dipsum lorem ipsum dipsum lorem ipsum dipsum lorem ipsum dipsum lorem ipsum dipsum lorem ipsum dipsum lorem ipsum dipsum lorem ipsum dipsum lorem ipsum dipsum lorem ipsum dipsum lorem ipsum dipsum lorem ipsum dipsum
+    
+        </div>
+
+        <br></br>
+        
+        <a href="#bgvid" class="return-to-top" id="return-to-top">Return to top</a>
+
+    </div>
+
+</body>
+</html>
+
+
