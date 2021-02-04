@@ -60,8 +60,10 @@
     text-justify:kashida;
 
     a:link {color:white;}
-    a:visited {color:lightgray;}
+    a:visited {color:white;}
     a:hover {color:black; background-color: white;}
     a:active {color:black; background-color: white;}
+
+    text-decoration: none;
 
 }
