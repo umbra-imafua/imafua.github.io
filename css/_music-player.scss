@@ -1,0 +1,67 @@
+.music-player {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+
+    z-index: -1;
+
+    canvas{
+        position: absolute;
+
+
+        display: flex;
+
+        align-self: stretch;
+
+        z-index: 0;
+        
+        background-color: transparent;
+    }
+
+    .music-text{
+        z-index: 1;
+    }
+
+    .music-desc{
+        z-index: 1;
+        min-height: 0;
+    }
+
+    .playlist{
+        
+        z-index: 1;
+
+        display: flex;
+        flex-direction: grid;
+        flex-wrap: wrap;
+        
+        align-items: stretch;
+
+        padding: 10px;
+        
+        a {
+
+            margin: 4px;
+
+            padding: 1px;
+
+            border: white;
+            border-radius: 10;
+            border-style:solid;
+            background-color:transparent;
+            text-decoration: none;
+            color: white;
+            &:hover{
+                background-color: white;
+                color: black;
+            }
+           
+        }
+    }
+
+    #is-play{
+        background-color: white;
+        color: black;
+    }
+}
+
