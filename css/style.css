@@ -177,48 +177,76 @@ h4 {
   overflow: hidden;
 }
 
-@font-face {
-  font-family: Imafuafont;
-  src: url(../media/fonts/Imafua-Regular.otf), url(../media/fonts/Imafua-Regular.ttf);
+.banner-titles {
+  padding-left: 10%;
+  padding-top: 10vh;
+  -webkit-animation: glitch 5s linear infinite;
+          animation: glitch 5s linear infinite;
 }
 
-@-webkit-keyframes FlickerText {
-  0% {
-    opacity: 0;
+@-webkit-keyframes glitch {
+  0%, 4%, 5%, 9%, 15%, 21%, 33%, 36%, 81%, 83% {
+    -webkit-transform: translate(0, 0) skew(0deg);
+            transform: translate(0, 0) skew(0deg);
   }
-  40% {
-    opacity: 0;
+  3%, 35% {
+    -webkit-transform: translate(2px, 0) skew(0deg);
+            transform: translate(2px, 0) skew(0deg);
   }
-  100% {
-    opacity: 1;
+  8%, 2% {
+    -webkit-transform: translate(-2px, 0) skew(0deg);
+            transform: translate(-2px, 0) skew(0deg);
+  }
+  82% {
+    -webkit-transform: translate(0, 0) skew(4deg);
+            transform: translate(0, 0) skew(4deg);
+  }
+  20% {
+    -webkit-transform: translate(0, 0) skew(-4deg);
+            transform: translate(0, 0) skew(-4deg);
   }
 }
 
-@keyframes FlickerText {
-  0% {
-    opacity: 0;
+@keyframes glitch {
+  0%, 4%, 5%, 9%, 15%, 21%, 33%, 36%, 81%, 83% {
+    -webkit-transform: translate(0, 0) skew(0deg);
+            transform: translate(0, 0) skew(0deg);
   }
-  40% {
-    opacity: 0;
+  3%, 35% {
+    -webkit-transform: translate(2px, 0) skew(0deg);
+            transform: translate(2px, 0) skew(0deg);
   }
-  100% {
-    opacity: 1;
+  8%, 2% {
+    -webkit-transform: translate(-2px, 0) skew(0deg);
+            transform: translate(-2px, 0) skew(0deg);
+  }
+  82% {
+    -webkit-transform: translate(0, 0) skew(4deg);
+            transform: translate(0, 0) skew(4deg);
+  }
+  20% {
+    -webkit-transform: translate(0, 0) skew(-4deg);
+            transform: translate(0, 0) skew(-4deg);
   }
 }
 
 .umbra-title-text {
-  -webkit-animation: FlickerText ease 4s;
-          animation: FlickerText ease 4s;
-  text-align: center;
+  -webkit-animation: fadeIn ease 4s;
+          animation: fadeIn ease 4s;
+  line-height: 0.5;
   font-size: 15vh;
   font-family: 'Baloo Thambi 2', monospace;
   color: white;
 }
 
+@font-face {
+  font-family: Imafuafont;
+  src: url(../media/fonts/Imafua-Regular.otf), url(../media/fonts/Imafua-Regular.ttf);
+}
+
 .imafua-title-text {
-  -webkit-animation: FlickerText ease 4s;
-          animation: FlickerText ease 4s;
-  text-align: center;
+  -webkit-animation: fadeIn ease 4s;
+          animation: fadeIn ease 4s;
   font-size: 12vh;
   font-family: Imafuafont;
   color: white;
