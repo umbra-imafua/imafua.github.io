@@ -1,5 +1,5 @@
 .banner-wrapper{
-    background-color: white;
+    background-color: black;
 
     aspect-ratio: 1/1;
     width: 100%;
@@ -24,7 +24,7 @@
 
     max-height: 100%;
     max-width: 100%;
-    background: transparent url(media/video/landing_fallback.png) no-repeat;
+    background: black;
 }
 
 @keyframes fadeIn {
@@ -38,7 +38,7 @@
 
     font-size:3vh;
 
-    animation: fadeIn ease 5s;
+    animation: fadeIn ease 4s;
 
     display: flex;
     width: 100%;
@@ -57,13 +57,61 @@
     color: white;
     padding: 1%;
 
-    text-justify:kashida;
-
     a:link {color:white;}
     a:visited {color:white;}
     a:hover {color:black; background-color: white;}
     a:active {color:black; background-color: white;}
 
     text-decoration: none;
+
+}
+
+
+
+
+.banner-overlay{
+    z-index: 2;
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+@font-face{
+    font-family: Imafuafont;
+    src: url(../media/fonts/Imafua-Regular.otf),url(../media/fonts/Imafua-Regular.ttf);
+}
+
+@keyframes FlickerText {
+    0% {opacity:0;}
+    40% {opacity:0;}
+    100% {opacity:1;}
+}
+
+.umbra-title-text{
+
+    animation: FlickerText ease 4s;
+
+    text-align: center;
+    
+    font-size:15vh;
+
+    font-family: 'Baloo Thambi 2', monospace;
+    color: white;
+
+}
+
+.imafua-title-text{
+
+    animation: FlickerText ease 4s;
+
+    text-align: center;
+    
+    font-size:12vh;
+
+    font-family: Imafuafont;
+    color: white;
 
 }
