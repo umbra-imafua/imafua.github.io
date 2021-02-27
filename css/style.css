@@ -64,6 +64,11 @@ h4 {
   background-color: black;
 }
 
+.video {
+  height: auto;
+  max-width: 100%;
+}
+
 .return-to-top {
   text-align: center;
   text-decoration: none;
