@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <html lang="en">
 <head>
-
-
-    
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
@@ -11,101 +7,64 @@
     <link rel="icon" type="image/gif" href="media/image/animated_favicon.gif">    
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">    
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="/css/style.css">
-
-
-    
 </head>
-
+<!-- ------------------------------------------------------------------------- -->
 <body>
-    
     <script type="module" src="js/script.js"></script>
 
-    <section class="banner-wrapper">
-        <div class="banner-video">
-            <video autoplay="autoplay" id="bgvid" muted="muted" fallback_image="media/video/landing_fallback.png  " title="Title">
-                <source src="media/video/landing0000-0060.webm" type="video/webm" ></source>
-                <!--<source src="video_path.mp4" type="video/mp4" ></source>
-                <source src="video_path.ogg" type="video/ogg" ></source>-->
-            </video>
+    <!-- ------------------------------------------------------------------------- -->
 
+    <section class="banner-wrapper">
+        <div class="banner-video">            
+            <video autoplay="autoplay" id="bgvid" muted="muted" fallback_image="media/video/landing_fallback.png  " title="Title"> <source src="media/video/landing0000-0060.webm" type="video/webm" > </source> <!--<source src="video_path.mp4" type="video/mp4" ></source>--> </video>
             <script> 
                 document.getElementById('bgvid').play();  
-
                 window.onscroll = function () { if(!document.getElementById('bgvid').ended && !document.getElementById('bgvid').error){ window.scrollTo(0, 0); } };
-
-                window.onbeforeunload = function () {
-                    window.location.replace("#bgvid");
-                    document.getElementById('return-to-top').click();
-                    window.scrollTo(0, 0);
-                    window.scrollY(0);
-                };
-
+                window.onbeforeunload = function () {window.location.replace("#bgvid"); document.getElementById('return-to-top').click(); window.scrollTo(0, 0); window.scrollY(0);};
             </script>
         </div>
 
-        <div class="banner-overlay">
-            <div class="banner-titles">
-                <div class="umbra-title-text">UMBRA</div>
-                <div class="imafua-title-text">IMAFUA</div>
-            </div>
-        </div>
+        <div class="banner-overlay"><div class="banner-titles">
+            <div class="umbra-title-text">UMBRA</div> <div class="imafua-title-text">IMAFUA</div>
+        </div></div>
 
-        <div class="banner-objects">
-            <div class="description-box">
-                <h3>Hey there! I make <a href="#animated">Animated</a> <a href="#audio">Audio</a> <a href="#visual">Visual</a> <a href="#systems">Systems</a> </h3>
-                <h3>Please send any enquiries or love letters to:</h3>
-                <h3>umbra.imafua@gmail.com</h3>
-                <hr></hr>
-            </div>
-        </div>
+        <div class="banner-objects"><div class="description-box">
+            <h3>Hey there! I make <a href="#animated">Animated</a> <a href="#audio">Audio</a> <a href="#visual">Visual</a> <a href="#systems">Systems</a> </h3>
+            <h3>Please send any enquiries or love letters to:</h3><h3>umbra.imafua@gmail.com</h3>
+            <hr></hr>
+        </div></div>
     </section>
 
+    <!-- ------------------------------------------------------------------------- -->
+
     <div class="content-wrapper">
-
+        <!-- ----------------------------------------------------------------- -->
         <div class="content" id="animated">
-
             <h3>Animated</h3>
             <video class="video" controls preload="metadata">
                 <source src="media/video/showreel.mp4" type="video/mp4">
                 <track label="English" kind="subtitles" srclang="en" src="//cdn.rawgit.com/iandevlin/iandevlin.github.io/master/mdn/video-player-with-captions/subtitles/vtt/sintel-en.vtt" default>
             </video>
-              
-
-            <div class="art-slideshow">
-                <div class="art-text">
-                    <h4 class='art-title'>Animations</h4>
-                    <div class='art-desc'>Here are my animations.</div>
-                    <img class='art-pic' src="media/image/animation-slides/queerkiss.gif" style="max-height: 70vh; aspect-ratio: 1/1;"></img>
-                </div>
-            </div>
-
-        </div>
-
+            <!--<img class='art-pic' src="media/image/animation-slides/queerkiss.gif" style="max-height: 70vh; aspect-ratio: 1/1;"></img>
+            <img class='art-pic' src="media/image/animation-slides/allmediaisporn.gif" style="max-height: 70vh; aspect-ratio: 1/1;"></img>
+            -->
+        </div>        
+        <!-- ----------------------------------------------------------------- -->
         <div class="content" id="audio">
-            <div class="music-player">
-                <h3>Audio</h3>
-                <h4>DJ</h4>
-                I dj tr 
-                
-
-                <div class="music-text">
-                    <h4 class='music-title'>Music</h4>
-                    <div class='music-desc'>This collection of music stretches from 2016 all the way up to the present day, most tracks are nothing more than short experiments. They are all royalty free, You can download any track by right clicking it and selecting 'save link as...' </div>
-                </div>
-            </div>
-
+            <h3>Audio</h3>
+            Our many sences effect us all differently. For me it is audio that most strongly cultivates emotion. I love raves and like to DJ, mixing hypnotic trance and techno with alternative emotive headphone tracks.
+            <div class="music-player"> <div class="music-text">
+                <h4 class='music-title'>Music</h4> <div class='music-desc'>This collection of music stretches from 2016 all the way up to the present day, most tracks are nothing more than short experiments. They are all royalty free, You can download any track by right clicking it and selecting 'save link as...' </div>
+             </div> </div>
         </div>
-
+        <!-- ----------------------------------------------------------------- -->
         <div class="content" id="visual">
             <h3>Visual</h3>
- 
             visual            
-
             <div class="art-slideshow">
                 <div class="art-text">
                     <h4 class='art-title'>Drawings</h4>
@@ -113,28 +72,23 @@
                     <img class='art-pic' src="media/image/art-slides/monenoke.png" style="max-height: 70vh; aspect-ratio: 1/1;"></img>
                 </div>
             </div>
-
-
         </div>
-
+        <!-- ----------------------------------------------------------------- -->
         <div class="content" id="systems">
             <h3>Systems</h3>
             I am proficient in:
             Javascript Lua Python C# C++ C Java HTML CSS DeVito Gdscript Swift Touchdesigner Ruby Pascal GML Processing and Minecraft-Redstone
 
         </div>
+        <!-- ----------------------------------------------------------------- -->
 
-        <div class="content" id="twitter">
-            <a class="twitter-timeline" data-height="50vh" data-width="50vh" data-dnt="true" data-theme="dark" href="https://twitter.com/imafua_umbra?ref_src=twsrc%5Etfw">Tweets by imafua_umbra</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
-
-
-        <br></br>
-
-        
-        <a href="#bgvid" class="return-to-top" id="return-to-top">Return to top</a>
-
+        <!-- ----------------------------------------------------------------- -->
+        <br></br><a href="#bgvid" class="return-to-top" id="return-to-top">Return to top</a>
+        page will appear to glitch out as you reach end.
     </div>
+<!-- ------------------------------------------------------------------------------ -->
+
+<a class="twitter-timeline" data-height="50vh" data-width="50vh" data-dnt="true" data-theme="dark" href="https://twitter.com/imafua_umbra?ref_src=twsrc%5Etfw">Tweets by imafua_umbra</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 </body>
 </html>
