@@ -1,16 +1,10 @@
 html{ 
     background-color: black;
-
-    font-size: 100%;
-    box-sizing: border-box;
 }
 
-*, *::before, *::after{
-    box-sizing: inherit;
-}
+*, *::before, *::after{ box-sizing: inherit; }
 
 body{
-
     background-color: black;
     color: white;
 
@@ -27,23 +21,17 @@ body{
     a:active {color:black; background-color: white;}
 }
 
-h3{
-    margin-top: 0;
-    margin-bottom: 0;
-}
-h4{
-    margin-top: 5px;
-    margin-bottom: 0;
-}
+h1{ margin-top: 0; margin-bottom: 0; }
+h2{ margin-top: 1px; margin-bottom: 0; }
+h3{ margin-top: 3px; margin-bottom: 0; }
+h4{ margin-top: 5px; margin-bottom: 0; }
 
 .content-wrapper{
-
     display: grid;
     grid-auto-flow: row;
     grid-row-gap: 16px;
-
-
     margin: 10%;
+
 }
 
 .content{
@@ -53,6 +41,9 @@ h4{
     border-radius: 10;
     border-style:solid;
     background-color:black;
+
+    overflow:hidden;
+
 }
   
 .video{
