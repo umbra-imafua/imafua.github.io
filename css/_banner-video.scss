@@ -74,8 +74,8 @@
 }
 
 .banner-titles{
-    padding-left: 10%;
-    padding-top: 10vh;
+    padding-left: 5%;
+    padding-top: 1vh;
 
     animation: glitch 5s linear infinite;
 } 
@@ -99,6 +99,8 @@
 }
 
 .umbra-title-text{
+
+    
     animation: fadeIn ease 4s;
     
     line-height: 1;
@@ -117,6 +119,7 @@
     src: url(../media/fonts/Imafua-Regular.otf),url(../media/fonts/Imafua-Regular.ttf);
 }
 .imafua-title-text{
+
     animation: fadeIn ease 4s;
     
     font-size:8vh;

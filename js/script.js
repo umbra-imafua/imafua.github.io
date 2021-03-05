@@ -1,7 +1,63 @@
+//on page load play intro
+document.getElementById('bgvid').play();  
+//if playing prevent scrolling
+window.onscroll = function () { if(!document.getElementById('bgvid').ended && !document.getElementById('bgvid').error){ window.scrollTo(0, 0); } };
+//jump to top on refresh
+window.onbeforeunload = function () {window.location.replace("#bgvid"); document.getElementById('return-to-top').click(); window.scrollTo(0, 0); window.scrollY(0);};
+
+
+//animation timing
+var frame = 0;
+var t=setInterval(pageanimation,33);
+
+function pageanimation() {
+    titleanimation()
+
+
+    frame = frame+1;
+    if(frame>59){frame=0};
+}
+
+//title effects
+const umbra_title = document.getElementById('umbra-title');
+const imafua_title = document.getElementById('imafua-title');
+const umbra_text = umbra_title.innerHTML;
+const imafua_text = imafua_title.innerHTML;
+
+var titleanimationtime = 0;
+
+function titleanimation(){
+
+    if(Math.random()>0.99){
+        titleanimationtime += Math.floor(Math.random() * 11);
+    }
+
+    if(titleanimationtime > 0){
+        var umbragliches = "        ___---☒▲░▀█UMBRA─🝗"
+        titleanimationtime -= 1;
+        umbra_title.innerHTML = "\n" + randstring(33,umbragliches) + "\n" + randstring(33,umbragliches) + "\n" + randstring(33,umbragliches);
+        imafua_title.innerHTML = randstring(6,'ABCDEFGHIJKLMNOPQRSTUVWXYZ');
+    }else{
+        umbra_title.innerHTML = umbra_text;
+        imafua_title.innerHTML = imafua_text;
+    }
+}
+
+function randstring(length,characters) {
+    var result           = '';
+    var charactersLength = characters.length;
+    for ( var i = 0; i < length; i++ ) {
+       result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+    return result;
+}
+
+
+
+//global music player
 import AudioPlayer from './music.js';
 
 const audioPlayer = new AudioPlayer('.music-player',[
-
     { url: 'media/audio/music/blurremix.wav', name: 'girls and boys', desc: 'I made this remix of the blur song \'girls and boys\' during pride month 2019, I was still figuring myself out at the time.'},
     { url: 'media/audio/music/CHANTINGMIDGETS.wav', name: 'flutes', desc: 'I really like the eastern sounding sakura plugin that comes with FL-studio.'},
     { url: 'media/audio/music/CHILL LIKE A RAINY FOREST.wav', name: 'rainy forest', desc: 'Sitting on a mossy log underneath a thick foliage, watching the rain run off the leaves.'},
@@ -36,10 +92,14 @@ const audioPlayer = new AudioPlayer('.music-player',[
     { url: 'media/audio/music/zezoozle.wav', name: 'zezoozle', desc: 'This is the best one.'},
 ],'.music-title','.music-desc' ); 
 
-import SlideShow from './artslideshow.js';
+
+/*
+slideshow
+import SlideShow from './slideshow.js';
 
 const slideShow = new SlideShow('.art-slideshow',[
 
     { url: 'media/audio/music/blurremix.wav', name: 'girls and boys', desc: 'I made this remix of the blur song \'girls and boys\' during pride month 2019, I was still figuring myself out at the time.'},
 
 ],'.art-title','.art-desc' ); 
+*/

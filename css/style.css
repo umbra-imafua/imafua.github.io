@@ -191,8 +191,8 @@ h4 {
 }
 
 .banner-titles {
-  padding-left: 10%;
-  padding-top: 10vh;
+  padding-left: 5%;
+  padding-top: 1vh;
   -webkit-animation: glitch 5s linear infinite;
           animation: glitch 5s linear infinite;
 }
