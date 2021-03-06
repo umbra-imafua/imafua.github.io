@@ -1,5 +1,6 @@
 html {
   background-color: black;
+  color: white;
 }
 
 *, *::before, *::after {
@@ -8,8 +9,6 @@ html {
 }
 
 body {
-  background-color: black;
-  color: white;
   margin: 0;
   padding: 0;
   font-family: 'JetBrains Mono', monospace;
@@ -63,7 +62,7 @@ h4 {
   margin: 10%;
 }
 
-.content {
+.content-wrapper .content {
   padding: 8px;
   border: white;
   border-radius: 10;
@@ -72,18 +71,22 @@ h4 {
   overflow: hidden;
 }
 
-.video {
+.content-wrapper .video {
   height: auto;
   max-width: 100%;
 }
 
-.return-to-top {
+.content-wrapper .return-to-top {
   text-align: center;
   text-decoration: none;
 }
 
-.return-to-top a:visited {
+.content-wrapper .return-to-top a:visited {
   color: white;
+}
+
+.dataloss-wrapper {
+  background-color: aqua;
 }
 
 .banner-wrapper {

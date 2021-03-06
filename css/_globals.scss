@@ -1,13 +1,11 @@
 html{ 
     background-color: black;
+    color: white;
 }
 
 *, *::before, *::after{ box-sizing: inherit; }
 
 body{
-    background-color: black;
-    color: white;
-
     margin: 0;
     padding: 0;
     
@@ -32,27 +30,34 @@ h4{ margin-top: 5px; margin-bottom: 0; }
     grid-row-gap: 16px;
     margin: 10%;
 
+    .content{
+        padding: 8px;
+
+        border: white;
+        border-radius: 10;
+        border-style:solid;
+        background-color:black;
+
+        overflow:hidden;
+
+    }
+    
+    .video{
+        height: auto;
+        max-width: 100%;
+    }
+
+
+    .return-to-top{
+        a:visited {color:white;}
+        text-align: center;
+        text-decoration: none;
+    }
 }
 
-.content{
-    padding: 8px;
 
-    border: white;
-    border-radius: 10;
-    border-style:solid;
-    background-color:black;
+.dataloss-wrapper{
+    background-color: aqua;
 
-    overflow:hidden;
 
-}
-  
-.video{
-    height: auto;
-    max-width: 100%;
-}
-
-.return-to-top{
-    a:visited {color:white;}
-    text-align: center;
-    text-decoration: none;
 }
