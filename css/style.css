@@ -85,16 +85,21 @@ h4 {
   color: white;
 }
 
-.dataloss-wrapper {
-  background-color: rebeccapurple;
+.glitch-wrapper {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  background-repeat: repeat;
 }
 
-.dataloss-wrapper table, .dataloss-wrapper th, .dataloss-wrapper td {
+.glitch-wrapper .glitch {
+  padding: 5vh;
+}
+
+.glitch-wrapper .glitch table, .glitch-wrapper .glitch th, .glitch-wrapper .glitch td {
+  background-image: url(/media/backgrounds/bus_seat.jpg);
   font-size: 2vh;
   background-color: purple;
   border: 1px solid white;
@@ -103,11 +108,34 @@ h4 {
   overflow-wrap: normal;
 }
 
-.dataloss-wrapper table img, .dataloss-wrapper th img, .dataloss-wrapper td img {
+.glitch-wrapper .glitch table img, .glitch-wrapper .glitch th img, .glitch-wrapper .glitch td img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 15vh;
   height: 15vh;
+}
+
+.glitch-wrapper .glitch .list {
+  height: 30vh;
+  width: 50vh;
+  overflow-y: scroll;
+  border: 1px solid white;
+}
+
+.glitch-wrapper .glitch .list::-webkit-scrollbar {
+  display: none;
+}
+
+.glitch-wrapper .glitch #zero {
+  background-image: url(/media/backgrounds/bus_seat.jpg);
+}
+
+.glitch-wrapper .glitch #one {
+  background-image: url(/media/backgrounds/chemical.jpg);
+}
+
+.glitch-wrapper .glitch #two {
+  background-image: url(/media/backgrounds/chemical.jpg);
 }
 
 .banner-wrapper {
