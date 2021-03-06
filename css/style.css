@@ -86,7 +86,28 @@ h4 {
 }
 
 .dataloss-wrapper {
-  background-color: aqua;
+  background-color: rebeccapurple;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.dataloss-wrapper table, .dataloss-wrapper th, .dataloss-wrapper td {
+  font-size: 2vh;
+  background-color: purple;
+  border: 1px solid white;
+  max-width: 100vh;
+  overflow: hidden;
+  overflow-wrap: normal;
+}
+
+.dataloss-wrapper table img, .dataloss-wrapper th img, .dataloss-wrapper td img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 15vh;
+  height: 15vh;
 }
 
 .banner-wrapper {
