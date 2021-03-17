@@ -60,28 +60,30 @@ h4{ margin-top: 5px; margin-bottom: 0; }
 
         padding: 5vh;
 
-        table, th, td {
-            img{
-                object-fit: cover;
-                width:15vh;
-                height:15vh;
-            }
-    
-            background-image: url(/media/backgrounds/bus_seat.jpg);
-    
-            font-size:2vh;
-    
-            background-color: purple;
-    
-            border: 1px solid white;
-            max-width: 100vh;
-            overflow: hidden;
-            overflow-wrap:normal;
+        table, th{      
+            td {
+                img{
+                    object-fit: cover;
+                    width:20vh;
+                    height:20vh;
+                }
+        
+                background-image: url(/media/backgrounds/bus_seat.jpg);
+        
+                font-size:2vh;
+        
+                background-color: purple;
+        
+                border: 1px solid white;
+                
+                overflow: hidden;
+                overflow-wrap:normal;
+            }   
         }
 
         .list{
-            height: 30vh;
-            width: 50vh;
+            width: 80vh;
+            height: 50vh;   
             overflow-y: scroll;
             border: 1px solid white;
         }

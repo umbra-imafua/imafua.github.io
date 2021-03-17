@@ -98,26 +98,25 @@ h4 {
   padding: 5vh;
 }
 
-.glitch-wrapper .glitch table, .glitch-wrapper .glitch th, .glitch-wrapper .glitch td {
+.glitch-wrapper .glitch table td, .glitch-wrapper .glitch th td {
   background-image: url(/media/backgrounds/bus_seat.jpg);
   font-size: 2vh;
   background-color: purple;
   border: 1px solid white;
-  max-width: 100vh;
   overflow: hidden;
   overflow-wrap: normal;
 }
 
-.glitch-wrapper .glitch table img, .glitch-wrapper .glitch th img, .glitch-wrapper .glitch td img {
+.glitch-wrapper .glitch table td img, .glitch-wrapper .glitch th td img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 15vh;
-  height: 15vh;
+  width: 20vh;
+  height: 20vh;
 }
 
 .glitch-wrapper .glitch .list {
-  height: 30vh;
-  width: 50vh;
+  width: 80vh;
+  height: 50vh;
   overflow-y: scroll;
   border: 1px solid white;
 }
