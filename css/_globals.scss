@@ -47,6 +47,8 @@ h4{ margin-top: 5px; margin-bottom: 0; }
 }
 
 .glitch-wrapper{    
+    overflow: hidden;
+
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;

@@ -86,6 +86,7 @@ h4 {
 }
 
 .glitch-wrapper {
+  overflow: hidden;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
