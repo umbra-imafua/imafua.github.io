@@ -39,6 +39,27 @@ h4{ margin-top: 5px; margin-bottom: 0; }
         height: auto;
         max-width: 100%;
     }
+    .art-wall{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+        grid-auto-rows: 1fr;
+
+        img{
+            max-width: 100%;
+            aspect-ratio: 1/1;
+        }
+    }
+    .art-wall::before {
+        content: '';
+        width: 0;
+        padding-bottom: 100%;
+        grid-row: 1 / 1;
+        grid-column: 1 / 1;
+    }
+    .art-wall > *:first-child {
+        grid-row: 1 / 1;
+        grid-column: 1 / 1;
+    }
     .return-to-top{
         a:visited {color:white;}
         text-align: center;
