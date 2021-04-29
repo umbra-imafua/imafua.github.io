@@ -1,7 +1,7 @@
 //on page load play intro
 document.getElementById('bgvid').play();  
 //if playing prevent scrolling
-window.onscroll = function () { if(!document.getElementById('bgvid').ended && !document.getElementById('bgvid').error){ window.scrollTo(0, 0); } };
+//window.onscroll = function () { if(!document.getElementById('bgvid').ended && !document.getElementById('bgvid').error){ window.scrollTo(0, 0); } };
 //jump to top on refresh
 window.onbeforeunload = function () {window.location.replace("#bgvid"); document.getElementById('return-to-top').click(); window.scrollTo(0, 0); window.scrollY(0);};
 
@@ -42,7 +42,6 @@ function titleanimation(){
         imafua_title.innerHTML = imafua_text;
     }
 }
-
 function randstring(length,characters) {
     var result           = '';
     var charactersLength = characters.length;
@@ -52,11 +51,8 @@ function randstring(length,characters) {
     return result;
 }
 
-
-
 //global music player
 import AudioPlayer from './music.js';
-
 const audioPlayer = new AudioPlayer('.music-player',[
     { url: 'media/music/blurremix.wav', name: 'girls and boys', desc: 'I made this remix of the blur song \'girls and boys\' during pride month 2019, I was still figuring myself out at the time.'},
     { url: 'media/music/CHANTINGMIDGETS.wav', name: 'flutes', desc: 'I really like the eastern sounding sakura plugin that comes with FL-studio.'},
@@ -91,15 +87,3 @@ const audioPlayer = new AudioPlayer('.music-player',[
     { url: 'media/music/wagoopdang.wav', name: 'wagoopdang', desc: 'None of my songs go anywhere really ;_)'},
     { url: 'media/music/zezoozle.wav', name: 'zezoozle', desc: 'This is the best one.'},
 ],'.music-title','.music-desc' ); 
-
-
-/*
-slideshow
-import SlideShow from './slideshow.js';
-
-const slideShow = new SlideShow('.art-slideshow',[
-
-    { url: 'media/music/blurremix.wav', name: 'girls and boys', desc: 'I made this remix of the blur song \'girls and boys\' during pride month 2019, I was still figuring myself out at the time.'},
-
-],'.art-title','.art-desc' ); 
-*/
