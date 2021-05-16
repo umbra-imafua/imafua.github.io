@@ -1,24 +1,20 @@
-//on page load play intro
-document.getElementById('bgvid').play();  
+document.getElementById('bgvid').play();  //on page load play intro
 //if playing prevent scrolling
 //window.onscroll = function () { if(!document.getElementById('bgvid').ended && !document.getElementById('bgvid').error){ window.scrollTo(0, 0); } };
 //jump to top on refresh
 window.onbeforeunload = function () {window.location.replace("#bgvid"); document.getElementById('return-to-top').click(); window.scrollTo(0, 0); window.scrollY(0);};
 
-
-//animation timing
+//animation timing________________________________________________________________________
 var frame = 0;
 var t=setInterval(pageanimation,33);
 
 function pageanimation() {
     titleanimation()
-
-
     frame = frame+1;
     if(frame>59){frame=0};
 }
 
-//title effects
+//title effects____________________________________________________________________________
 const umbra_title = document.getElementById('umbra-title');
 const imafua_title = document.getElementById('imafua-title');
 const umbra_text = umbra_title.innerHTML;
@@ -51,7 +47,7 @@ function randstring(length,characters) {
     return result;
 }
 
-//global music player
+//global music player_______________________________________________________________________
 import AudioPlayer from './music.js';
 const audioPlayer = new AudioPlayer('.music-player',[
     { url: 'media/music/blurremix.wav', name: 'girls and boys', desc: 'I made this remix of the blur song \'girls and boys\' during pride month 2019, I was still figuring myself out at the time.'},
