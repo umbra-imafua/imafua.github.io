@@ -41,7 +41,7 @@ h4{ margin-top: 5px; margin-bottom: 0; }
     }
     .art-wall{
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+        grid-template-columns: repeat(auto-fill, min-max(16rem, 1fr));
         grid-auto-rows: 1fr;
 
         img{
